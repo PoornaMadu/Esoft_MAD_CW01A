@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:outlineAmbientShadowColor="@color/black"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:id="@+id/todolist"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <TextView
+        android:id="@+id/todocount"
+        android:layout_width="266dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="32dp"
+        android:text="x"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/add"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.41"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="112dp"
+        android:text="Add Task"
+        android:textColor="#000000"
+        app:backgroundTint="#CDDC39"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/todocount"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="26dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:textColor="#212121"
+        app:backgroundTint="#00CDDC39"
+        app:iconTint="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todolist"
+        app:layout_constraintVertical_bias="0.139"
+        app:strokeColor="#00FFFFFF" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
